@@ -137,7 +137,9 @@ var [flag , setFlag] = useState(true);
             </div>
 
             <div id={style.resume} >
-              <Button width='200px' height='50px' background='transparent' border='2px solid' borderRadius='50px' id={style.navCv}>RESUME</Button>
+              <Link to="shivam_jaiswal.pdf" target="_blank"><Button width='200px' height='50px' background='transparent' border='2px solid' borderRadius='50px' id={style.navCv}>RESUME</Button>
+           </Link>
+              
             </div>
 
 
