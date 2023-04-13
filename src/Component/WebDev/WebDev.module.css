@@ -1,0 +1,51 @@
+#Project{
+    background-color: #0E1525;
+    padding-top: 20px;
+}
+#heading{
+    background: linear-gradient(120deg,#1c99fe 20.69%,#7644ff 50.19%,#fd4766 79.69%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 100px;
+    font-weight: 700;
+}
+#heading2{
+    color:pink;
+    font-size: 58px;
+    font-weight: 700;
+}
+#nav{
+    margin-bottom:100px
+}
+
+#projectCard {
+    transform: rotate(0) !important;
+    perspective: 0;
+}
+#bgi{
+    height: 550px;
+    background-image: url(https://t3.ftcdn.net/jpg/04/22/94/62/360_F_422946225_fwALKxPJg5HtQMkcb5DVuyCWPYSMNH3s.webp);
+    background-size: cover;
+}
+
+#projectCard:hover {
+transform: rotate(0) !important;
+}
+.text{
+    text-align: left;
+    padding: 20px;
+  
+}
+.indiamart_text{
+    text-align: left;
+   
+}
+@media all and (max-width: 1100px) and (min-width:200px) {
+    #heading{
+        background: linear-gradient(120deg,#1c99fe 20.69%,#7644ff 50.19%,#fd4766 79.69%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        font-size: 40px;
+        font-weight: 700;
+    }
+}

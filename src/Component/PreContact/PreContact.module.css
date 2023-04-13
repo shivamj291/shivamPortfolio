@@ -1,0 +1,61 @@
+#contact{
+    height: 390px;
+    background-color:rgb(54, 63, 116);
+    color:white;
+    padding: 50px;
+
+    
+    
+}
+#contact_Inner_div{
+    margin:auto;
+ }
+ #contact_Inner_div h1{
+   font-size:40px;
+    color:grey;
+}
+ #contact_Inner_div p{
+    text-align: center;
+    margin-top: 40px;
+    font-size: 30px;
+    text-decoration: underline;
+ }
+
+
+#cont h3{
+text-align: center;
+margin:auto;
+font-size:20px
+}
+#contact_Inner_div{
+    margin:auto;
+ }
+ @media all and (max-width: 900px) and (min-width:200px) {
+   #contact{
+      height: 190px;
+      color:white;
+      padding:10px;
+  }
+  #contact_Inner_div{
+      margin:auto;
+   }
+   #contact_Inner_div h1{
+     font-size:10px;
+      color:grey;
+  }
+   #contact_Inner_div p{
+      text-align: center;
+      margin-top: 40px;
+      font-size: 10px;
+      text-decoration: underline;
+   }
+  
+  
+  #cont h3{
+  text-align: center;
+  font-size:10px
+  }
+  #contact_Inner_div{
+      margin:auto;
+   }
+  }

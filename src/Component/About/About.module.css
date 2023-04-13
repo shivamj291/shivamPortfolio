@@ -1,0 +1,382 @@
+#Aboutt{
+   
+    display:flex;
+
+    background-color: #0E1525;
+    padding-top: 160px;
+}
+#fold{
+    display: none;
+}
+#image{
+    
+    width: 40%;
+    margin-left:20px
+   
+}
+#image img{
+    border-radius: 10px;
+}
+#aboutnav{
+    display: flex;
+    justify-content: space-between;
+    width: 78%;
+    margin:30px auto;
+    margin-left:80px;
+    border: 1px solid gray;
+    
+    border-radius: 50px;
+
+}
+#aboutnav span{
+    text-decoration: none;
+    color: aliceblue;
+    font-weight: 900;
+   
+}
+#textabout{
+    width: 60%;
+    
+}
+#aboutnav span{
+    padding:20px 35px;
+    width: 25%;
+}
+
+#aboutpara1{
+    background: linear-gradient(120deg,#1c99fe 20.69%,#7644ff 50.19%,#fd4766 79.69%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    width: 160px;
+    text-align: left;
+    font-size: 20px;
+    margin:0px 90px 0px 80px;
+}
+#aboutpara2{
+    font-size: 20px;
+    line-height: 30px;
+    text-align: justify;
+    margin-right:20px;
+    margin-left:80px;
+    color: aliceblue;
+
+}
+#abouth2{
+    font-size: 50px;
+    font-weight: 600;
+    text-align: left;
+    color:white;
+    margin:0px;
+    margin-left:80px;
+    
+
+}
+hr{
+    display: none;
+}
+.fn{
+  color:rgb(152,156,171);
+  text-align:left;
+  margin-left:100px;
+  font-weight: 600;
+  font-size: 20px;
+}
+.fns{
+    display: flex;
+    gap:40px;
+    color:rgb(152,156,171);
+   
+    text-align:left;
+    margin-left:100px;
+    font-weight: 600;
+    font-size: 20px;
+   
+  
+  }
+.fn li{
+    margin-left:20px;
+
+}
+.fn h3{
+    margin-left:50px;
+
+}
+
+.css-1jrtelv {
+    height: 100%;
+    transition-property: var(--chakra-transition-property-common);
+    transition-duration: var(--chakra-transition-duration-slow);
+    background-color: var(--chakra-colors-blue-500);
+    background: linear-gradient(45deg, black, transparent);
+}
+#prog{
+    width:75% ;
+    margin:30px auto;
+}
+@media all and (max-width: 1100px) and (min-width:750px) {
+
+    #Aboutt{
+        display: block;
+        padding-top: 20px;
+        padding-bottom: 40px;
+    }
+    #image{
+        width: 80%;
+        margin:40px auto
+    }
+    .fn{
+        
+         margin: 30px;
+        font-size: 26px;
+    }
+    .fns{
+    
+       
+        display: grid;
+        grid-template-columns:repeat(2,1fr);
+        gap:10px;
+        margin: 30px;
+        font-size: 26px;
+    
+    }
+    #prog{
+        width:75% ;
+      margin:40px
+    }
+    #aboutpara1{
+        width: 320px;
+        font-size: 40px;
+        margin:auto
+        
+    }
+    #textabout{
+        margin:auto;
+        width: 96%;
+    }
+    #aboutpara2{
+        font-size: 26px;
+        margin:50px
+    }
+    #abouth2{
+        text-align: center;
+        margin:0;
+     
+       }
+       #aboutnav{
+       
+      
+        width:100%;
+        font-size: 21px;
+        margin:auto
+    
+    }
+ 
+}
+@media all and (max-width: 653px) and (min-width:280px) {
+    #aboutnav{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        width: 100%;
+        margin:30px auto;
+        
+        border:none;
+        
+        border-radius: 50px;
+    
+    }
+    #fold{
+        display: block;
+    }
+ 
+    
+    #Aboutt{
+        display: block;
+        padding-top: 20px;
+        padding-bottom: 40px;
+    }
+    #image{
+    
+        width: 90%;
+        margin:auto;
+       
+    }
+    #textabout{
+        width: 100%;
+        
+    }
+    #aboutpara1{
+      
+        margin:0px 90px 0px 80px;
+        
+       
+    }
+    #aboutpara2{
+       
+        margin:10px;
+        font-size: 16px;
+    
+        
+    }
+
+    .fn li{
+        margin-left:0px;
+    
+    }
+   
+    .fn h3{
+        margin-left:0px;
+    
+    }
+    #aboutnav span{
+        padding:20px 5px;
+        width:100%;
+        font-weight: 600;
+    }
+    
+        
+    .fn{
+       
+        margin: 20px 0px 20px 10px;
+        font-size: 16px;
+    }
+    .fns{
+    
+        margin-left:10px;
+        display: grid;
+        grid-template-columns:repeat(2,1fr);
+        gap:10px
+        
+    
+    }
+    #aboutpara2{
+    margin:10px
+    
+    }
+    #aboutpara1{
+        text-align: center;
+        margin: auto;
+        width: 280px;
+    }
+    #abouth2{
+     text-align: center;
+     margin:0;
+  
+    }
+    hr{
+        display:block;
+        color: rgba(174, 43, 14, 0.371);
+        background-color: rgba(154, 34, 10, 0.371) ;
+    }
+    .highLight{
+        color:white
+    }
+}
+@media all and (max-width: 750px) and (min-width:300px) {
+
+    #aboutnav{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        width: 100%;
+        margin:5px auto;
+        
+        border:none;
+        font-size: 18px;
+        border-radius: 50px;
+        font-weight: 600;
+      
+    }
+    #my{
+        display: none;
+    }
+    #Aboutt{
+        display: block;
+        padding-top: 20px;
+        padding-bottom: 40px;
+    }
+    #image{
+    
+        width: 90%;
+        margin:auto;
+       
+    }
+    #textabout{
+        width: 100%;
+        
+    }
+    #aboutpara1{
+      
+        margin:0px 90px 0px 80px;
+        
+       
+    }
+    #aboutpara2{
+       
+        margin:10px;
+        font-size: 16px;
+    
+        
+    }
+
+    .fn li{
+        margin-left:0px;
+    
+    }
+   
+    .fn h3{
+        margin-left:0px;
+    
+    }
+    #aboutnav span{
+        padding:20px 5px;
+        width:100%;
+        font-weight: 600;
+    }
+    
+        
+    .fn{
+       
+        margin: 20px 0px 20px 10px;
+        font-size: 16px;
+    }
+    .fns{
+    
+        margin-left:10px;
+        display: grid;
+        grid-template-columns:repeat(2,1fr);
+        gap:10px
+        
+    
+    }
+    #aboutpara2{
+    margin:10px
+    
+    }
+    #aboutpara1{
+        text-align: center;
+        margin: auto;
+        width: 280px;
+    }
+    #abouth2{
+     text-align: center;
+     margin:0;
+  
+    }
+    hr{
+        display:block;
+        color: rgba(174, 43, 14, 0.371);
+        background-color: rgba(154, 34, 10, 0.371) ;
+    }
+    .highLight{
+        color:white
+    }
+    
+}
+
+@media all and (max-width: 1300px) and (min-width:900px) {
+
+    #aboutnav span{
+       width: 100%;
+    
+    }
+ 
+}

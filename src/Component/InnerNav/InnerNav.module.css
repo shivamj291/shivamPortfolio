@@ -1,0 +1,110 @@
+#Navbar{
+    display: flex;
+    justify-content: left;
+    color:white;
+    
+    font-size: 20px;
+    gap:100px;
+
+}
+#Navbar a{
+    color:rgb(214, 222, 229);
+    text-decoration: none;
+    font-weight: 500;
+    margin-top: 10px;
+}
+.Lincomp{
+    padding: 15px;
+}
+.Lincons{
+   padding:5px;
+}
+.iconbtn:hover{
+     background-color:transparent;
+     border: 2px solid gray;
+     color:gray
+
+}
+#Navbar a:hover{
+ color: rgb(253,71,102);
+ text-decoration: underline;
+ text-underline-offset: 25px ;
+ text-decoration-thickness: 3px;
+}
+#navImg{
+    width: 60px;
+    display: block;
+    margin: 0 40px;
+}
+#navCv:hover{
+    background-color: transparent;
+    border:2px solid gray;
+    color:gray
+}
+#icons{
+    margin-top: 10px;
+}
+
+#link{
+    margin-top: 15px;
+}
+#logo{
+    display: flex
+}
+#small{
+    display:none;
+}
+
+
+@media all and (max-width: 1100px) and (min-width:750px) {
+
+   
+    #logo{
+        size:10px;
+        
+    }
+    #navImg{
+        display: none;
+    }
+    #Navbar{
+        justify-content: space-between;
+        gap:0;
+    }
+    #Navbar a{
+       
+        padding: 0px;
+        margin:10px
+      
+    }
+    #small{
+        display: none;
+    }
+    #resume{
+        display: none;
+    }
+}
+@media all and (max-width: 750px) and (min-width:200px) {
+
+    #link{
+        display: none;
+    }
+    #logo{
+        size:10px;
+        display:none
+    }
+    #Navbar{
+        justify-content: space-between;
+        gap:0;
+    }
+    #Navbar a{
+       
+        padding: 0px;
+      
+    }
+    #small{
+        display: block;
+    }
+    #resume{
+        display: none;
+    }
+}

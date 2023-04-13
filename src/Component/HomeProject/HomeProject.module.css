@@ -1,0 +1,153 @@
+
+#prj{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap:40px;
+    margin-top: 100px;
+}
+
+.hompro{
+    padding:100px 30px 0px 30px;
+}
+
+.imag>div {
+
+    width: 100%;
+    height: 600px;
+    border-radius: 20px;
+    transition: 1s;
+    display: flex;
+    flex-direction:column-reverse;
+    align-items: center;
+    
+    
+}
+.imag>div:hover{
+  
+    background-image: linear-gradient( rgba(255, 255, 255, 0),#e6425d77);
+    transform: scale(1);
+    margin-top: -10px;
+    
+
+}
+.imag{
+ 
+    border-radius: 20px;
+    transition: 1s;
+    z-index: 2;
+   
+    margin-bottom: 10px;
+    background-size:cover;
+}
+.imag:hover{
+    transform: scale(1.02);
+   
+}
+a{
+    text-decoration: none;
+    text-align: left;
+}
+
+#imgtxt{
+    display:none;
+     text-align: center;
+    animation: textIn .5s ease;
+
+}
+#imgtext{
+    
+    animation: textIn .5s ease;
+
+}
+#mypr{
+    font-size: 25px;
+
+}
+#h1{
+    color:white;
+    font-size: 58px;
+    font-weight: 700;
+}
+p{
+    color:white
+}
+#h3{
+    
+        background: linear-gradient(120deg,#1c99fe 20.69%,#7644ff 50.19%,#fd4766 79.69%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        width: 230px;
+        margin: auto;
+        font-size: 20px;
+  
+}
+
+@keyframes textIn {
+
+    0%{
+        transform: translateY(100%);
+    }
+    100%{
+        transform: translateY(5%);
+    }
+}
+#hov:hover{
+   background-color: transparent;
+   border: 2px solid rgb(253,71,102);
+   color:rgb(253,71,102)
+}
+
+@media all and (max-width: 1100px) and (min-width:750px) {
+ 
+    #prj{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        width: 97%;
+        margin:auto
+       }
+       #hp{
+        text-align: justify;
+        width: 100%;
+        margin:50px auto;
+        font-size: 30px;
+     }
+     br{
+        display: none;
+     }
+     .skillTxt{
+        width:100%;
+        font-size: 25px; 
+    }
+    #h3{
+        
+        width: 400px;
+        font-size: 40px;
+       
+}
+}
+@media all and (max-width:750px) and (min-width:200px) {
+
+    #prj{
+     display: block;
+     width: 99%;
+     margin:auto
+    }
+    .hompro{
+        padding:100px 5px 0px 5px;
+    }
+    .imag>div {
+      margin:10px 0;
+      height: 400px;
+     }
+     #hp{
+        text-align: justify;
+        font-size: 16px;
+
+     }
+     br{
+        display: none;
+     }
+    
+}
+
+
