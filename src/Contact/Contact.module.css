@@ -2,6 +2,8 @@
 #side_div{
 
   width: 45%;
+  background-color:rgb(9,16,32);
+  
 }
 #feel_Free{
   font-size:30px;
@@ -11,7 +13,17 @@
     -webkit-text-fill-color: transparent;
     width: 30%;
     margin:auto;
-    margin-bottom:100px;
+    margin-bottom:60px;
+    font-weight: 700;
+}
+#hii{
+  
+
+  background: linear-gradient(120deg,#1c99fe 20.69%,#7644ff 50.19%,#fd4766 79.69%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    width: 21%;
+    font-weight: 700;
 }
 #contact{
  
@@ -36,7 +48,7 @@ input[type="submit"] {
   color:white;
   background-color:rgb(253,71,102);
   border-radius: 30px;
-  margin-bottom: 150px;
+  margin-bottom: 100px;
 }
 input[type="text"],input[type="email"],input[type="message"],textarea,input[type='number']{
 
@@ -70,6 +82,15 @@ input[type="text"]::placeholder,input[type="email"]::placeholder,input[type="mes
       margin-bottom:100px;
       
   }
+  #hii{
+  
+
+    background: linear-gradient(120deg,#1c99fe 20.69%,#7644ff 50.19%,#fd4766 79.69%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      width: 62%;
+      font-weight: 700;
+  }
   #contact_inputs{
    
     gap: 30px;
@@ -79,7 +100,8 @@ input[type="text"]::placeholder,input[type="email"]::placeholder,input[type="mes
     #side_div{
 
       width: 90%;
-      margin:auto
+      margin:auto;
+     
     }
 }
          

@@ -12,19 +12,8 @@ function Skill(){
      },[])
     return(
         <div id={style.s}>
-          <h1 id={style.heading2} style={{marginTop:"100px"}}>My Skills</h1>
-          <p id={style.hp}>	I am an aspiring web developer with a vast array of knowledge in
-						many different front end and back end languages, responsive
-						frameworks, databases, and best code practices.
-						<br />
-						My objective is simply to be the best web developer that I can be
-						and to contribute to the technology industry all that I know and can
-						do. <br />I am dedicated to perfecting my craft by learning from
-						more seasoned developers, remaining humble, and continuously making
-						strides to learn all that I can about development. <br />I believe
-						that my understanding of problem solving and algorithms are also
-						skills that have and will continue to contribute to my overall
-						success as a developer.</p>
+       
+         
         <h1 id={style.sh1}></h1>
         <div id={style.whole_Skill}>
 

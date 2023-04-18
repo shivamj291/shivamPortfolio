@@ -1,75 +1,70 @@
 #Aboutt{
    
     display:flex;
-
     background-color: #0E1525;
-    padding-top: 160px;
+    padding-top: 160px ;
+    padding-bottom: 10px ;
 }
 #fold{
     display: none;
 }
 #image{
-    
-    width: 40%;
-    margin-left:20px
-   
+    padding: 25px;
+    width: 41.666%;
 }
 #image img{
     border-radius: 10px;
 }
 #aboutnav{
-    display: flex;
-    justify-content: space-between;
-    width: 78%;
-    margin:30px auto;
-    margin-left:80px;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    width: 84%;
+    margin:30px 0;
     border: 1px solid gray;
-    
     border-radius: 50px;
-
+    height: 60px;
 }
 #aboutnav span{
     text-decoration: none;
     color: aliceblue;
-    font-weight: 900;
-   
+    font-weight: 700;
+    cursor: pointer;
+    text-align: center;
+    height: 60px;
 }
 #textabout{
-    width: 60%;
-    
-}
-#aboutnav span{
-    padding:20px 35px;
-    width: 25%;
+    width: 58.3333%;
+    padding: 25px;
 }
 
-#aboutpara1{
-    background: linear-gradient(120deg,#1c99fe 20.69%,#7644ff 50.19%,#fd4766 79.69%);
-    -webkit-background-clip: text;
+#inn{
+    background-image: linear-gradient(-224deg,#fd4766,#337dff);
     -webkit-text-fill-color: transparent;
-    width: 160px;
+}
+#aboutpara1{
+    width: 230px;
     text-align: left;
-    font-size: 20px;
-    margin:0px 90px 0px 80px;
+    font-size: 25px;
+    font-weight: 700;
 }
 #aboutpara2{
     font-size: 20px;
     line-height: 30px;
-    text-align: justify;
+    text-align: left;
     margin-right:20px;
-    margin-left:80px;
-    color: aliceblue;
+    color:rgb(152,156,171);
 
 }
 #abouth2{
-    font-size: 50px;
+    font-size: 55px;
     font-weight: 600;
     text-align: left;
-    color:white;
-    margin:0px;
-    margin-left:80px;
-    
-
+    background: linear-gradient(120deg,#1c99fe 20.69%,#7644ff 50.19%,#fd4766 79.69%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+     width: 260px;
+     margin-top: -20px;
+    font-weight: 600px;
 }
 hr{
     display: none;
@@ -77,7 +72,6 @@ hr{
 .fn{
   color:rgb(152,156,171);
   text-align:left;
-  margin-left:100px;
   font-weight: 600;
   font-size: 20px;
 }
@@ -85,33 +79,22 @@ hr{
     display: flex;
     gap:40px;
     color:rgb(152,156,171);
-   
     text-align:left;
-    margin-left:100px;
     font-weight: 600;
     font-size: 20px;
-   
-  
   }
 .fn li{
     margin-left:20px;
-
 }
 .fn h3{
     margin-left:50px;
-
-}
-
-.css-1jrtelv {
-    height: 100%;
-    transition-property: var(--chakra-transition-property-common);
-    transition-duration: var(--chakra-transition-duration-slow);
-    background-color: var(--chakra-colors-blue-500);
-    background: linear-gradient(45deg, black, transparent);
 }
 #prog{
     width:75% ;
     margin:30px auto;
+}
+#aboutnav p{
+    margin-top: 18px;
 }
 @media all and (max-width: 1100px) and (min-width:750px) {
 
@@ -139,6 +122,7 @@ hr{
         font-size: 26px;
     
     }
+    
     #prog{
         width:75% ;
       margin:40px
@@ -155,13 +139,12 @@ hr{
     }
     #aboutpara2{
         font-size: 26px;
-        margin:50px
+        margin:50px 0;
     }
     #abouth2{
         text-align: center;
-        margin:0;
-     
-       }
+        margin:0 auto;
+    }
        #aboutnav{
        
       
@@ -169,6 +152,17 @@ hr{
         font-size: 21px;
         margin:auto
     
+    }
+    #aboutpara1{
+        background: linear-gradient(120deg,#1c99fe 20.69%,#7644ff 50.19%,#fd4766 79.69%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        text-align: center;
+        width: 100%;
+        font-weight: 700;
+    }
+    #aboutnav p{
+        margin-top: 14px;
     }
  
 }
@@ -182,12 +176,16 @@ hr{
         border:none;
         
         border-radius: 50px;
-    
+        height:100px;
     }
+    #aboutnav p{
+        margin-top: 14px;
+    }
+    
     #fold{
         display: block;
     }
- 
+   
     
     #Aboutt{
         display: block;
@@ -202,13 +200,14 @@ hr{
     }
     #textabout{
         width: 100%;
+        padding:0
         
     }
     #aboutpara1{
       
-        margin:0px 90px 0px 80px;
-        
-       
+        margin:auto;
+        width: 230px;
+       text-align: center;
     }
     #aboutpara2{
        
@@ -228,11 +227,13 @@ hr{
     
     }
     #aboutnav span{
-        padding:20px 5px;
+    
         width:100%;
         font-weight: 600;
     }
-    
+    .sidepadingl{
+          margin:auto;
+    }
         
     .fn{
        
@@ -249,17 +250,15 @@ hr{
     
     }
     #aboutpara2{
-    margin:10px
+    margin:15px
     
     }
-    #aboutpara1{
-        text-align: center;
-        margin: auto;
-        width: 280px;
-    }
+  
     #abouth2{
      text-align: center;
      margin:0;
+     width: 100%;
+     margin:auto
   
     }
     hr{
@@ -270,6 +269,9 @@ hr{
     .highLight{
         color:white
     }
+    #Progress{
+        margin: auto;
+    }
 }
 @media all and (max-width: 750px) and (min-width:300px) {
 
@@ -277,14 +279,18 @@ hr{
         display: grid;
         grid-template-columns: repeat(3,1fr);
         width: 100%;
-        margin:5px auto;
+        margin:30px auto;
         
         border:none;
         font-size: 18px;
         border-radius: 50px;
         font-weight: 600;
-      
+        height: 100px;
     }
+    #aboutnav p{
+        margin-top: 15px;
+    }
+    
     #my{
         display: none;
     }
@@ -305,8 +311,8 @@ hr{
     }
     #aboutpara1{
       
-        margin:0px 90px 0px 80px;
-        
+        margin:auto;
+    
        
     }
     #aboutpara2{
@@ -327,7 +333,7 @@ hr{
     
     }
     #aboutnav span{
-        padding:20px 5px;
+        
         width:100%;
         font-weight: 600;
     }
@@ -348,7 +354,7 @@ hr{
     
     }
     #aboutpara2{
-    margin:10px
+    margin:15px
     
     }
     #aboutpara1{
@@ -369,6 +375,7 @@ hr{
     .highLight{
         color:white
     }
+
     
 }
 
@@ -380,3 +387,6 @@ hr{
     }
  
 }
+
+
+

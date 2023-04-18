@@ -79,8 +79,8 @@ function Home(){
         <h1 className={style.size}>I’m Shivam Jaiswal</h1>
 
         <p id={style.animated_Text} ref={anima}>
-            <span >web developer</span>
-            <span >mern student</span>
+            <span >Web Developer</span>
+            <span >MERN Student</span>
             <span >UI Creator</span>
         </p>
         <h1 className={style.size}>Live in Raisen (m.p.)</h1>

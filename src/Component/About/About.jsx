@@ -31,12 +31,17 @@ import { Box, Progress,Stack } from '@chakra-ui/react'
  </div>
 
 </div>
-<Box  id={style.prog}>
-    <h3 style={{color:"white", textAlign:"left"}}>Technical</h3>
-    <span><Progress value={80} /></span>
-    <h3 style={{color:"white", textAlign:"left"}}>Communication</h3>
-    <Progress value={50} />
-</Box>
+  <div style={{width:"80%",marginTop:'20px'}} id={style.Progress}>
+  <p style={{display:'flex',justifyContent:"space-between",width:'80%',color:'rgb(152,156,171)',fontWeight:"600",fontSize:'18px'}}><span >Technical</span><span>80%</span></p>
+   <div style={{background:'white',height:'4px',width:"80%",borderRadius:'3px',margin:"10px 0px"}}>
+      <div style={{height:'4px',width:"80%",borderRadius:'3px'}} id={style.inn}></div>
+   </div>
+   <p style={{display:'flex',justifyContent:"space-between",width:'80%',color:'rgb(152,156,171)',fontWeight:"600",fontSize:'18px'}}><span >Communication</span><span>70%</span></p>
+   <div style={{background:'white',height:'4px',width:"80%",borderRadius:'3px',margin:"10px 0px"}}>
+      <div style={{height:'4px',width:"70%",borderRadius:'3px'}} id={style.inn}></div>
+   </div>
+  </div>
+  
 
         </div>
         
@@ -98,7 +103,7 @@ export function Awards(){
     return(
         <div className={style.fn}>
             <ul>
-                    Got 3rd price in the construct week project in unit 4.<br/>
+                    Got 3rd price in the Project Presentation in Masai School.<br/>
             </ul>
             <ul>
             <span className={style.highLight}>website name - </span>Lovoda.<br/>
@@ -156,19 +161,20 @@ function About(){
         <div id='about'>
 
 <div id={style.Aboutt}>
-           <div id={style.image}><img src="https://pps.whatsapp.net/v/t61.24694-24/339892286_923466469104639_3924182173794610925_n.jpg?ccb=11-4&oh=01_AdSYt4jTzl-GOYdmNeap_PiTrqB0wA4Yx2i3W5b8kD89ew&oe=643E7ACB" width="100%"/></div>
+           <div id={style.image} style={{}}><img src="set5.jpg"/></div>
            <div id={style.textabout}>
 
-            <p id={style.aboutpara1}>My About Details</p>
+          
             <h2 id={style.abouth2}>About Me</h2>
-            <p id={style.aboutpara2}>There are many variations of passages of Lorem Ipsum available, but the majority have suffered in some form, by injected humour.</p>
+            <p id={style.aboutpara2}>As a full stack web developer, I am passionate about creating seamless user experiences through my expertise in JavaScript, HTML, CSS, and React. With a strong command of these languages, I am able to craft dynamic front-end applications that engage users and drive results. Additionally, my skills extend to the back-end, where I can build robust systems that are both efficient and secure. Whether working solo or as part of a team, I am committed to delivering top-quality solutions that exceed expectations.
+</p>
            <hr id={style.fold}/>
-             <div id={style.aboutnav}>
-                <span onClick={skillfn} style={skil ? {  backgroundColor:"#FD4766",borderRadius:"50px"}: null}>My Skills</span>
-                <span onClick={awafn}  style={awa ? {  backgroundColor:"#FD4766",borderRadius:"50px"}: null}>Awards</span>
-                <span onClick={expfn}  style={exp ? {  backgroundColor:"#FD4766",borderRadius:"50px"}: null}>Experience</span>
-                <span onClick={edufn}  style={edu ? {  backgroundColor:"#FD4766",borderRadius:"50px"}: null}>Education</span>
-             </div>
+             <ul id={style.aboutnav}>
+                <span onClick={skillfn} style={skil ? {  backgroundColor:"#FD4766",borderRadius:"50em"}: null }><div style={{display:'flex',gap:"5px",justifyContent:'center'}} className={style.sidepadingl}><p>Main</p><p>skills</p></div></span>
+                <span onClick={awafn}  style={awa ? {  backgroundColor:"#FD4766",borderRadius:"50px"}: null}><p>Awards</p></span>
+                <span onClick={expfn}  style={exp ? {  backgroundColor:"#FD4766",borderRadius:"50px"}: null}><p>Experience</p></span>
+                <span onClick={edufn}  style={edu ? {  backgroundColor:"#FD4766",borderRadius:"50px"}: null} className={style.sidepadingr}><p>Education</p></span>
+             </ul>
            <hr/>
                <div>
                 <span>{ awa ?  <Awards/> :  null} </span>
