@@ -79,7 +79,7 @@ function LowerNav(){
 
         <div id={style.Navbar}>
             <div id={style.logo}>  
-               <img src="https://imroz.rainbowit.net/assets/images/logo/logo-light.png" id={style.navImg}/>
+               <img src="portfoliologo.png" id={style.navImg}/>
          
             </div>
            <LowerNavIcons/>
