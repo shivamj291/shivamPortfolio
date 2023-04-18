@@ -75,7 +75,7 @@ function Home(){
 
 <div ref={statdiv} style={{height:"20px",margin:"50px"}}></div>
 <div id={style.hometext} >
-        <h3 style={flag ? {letterSpacing:"5px",color:"gray",marginTop:"120px"}: {letterSpacing:"5px",color:"gray",marginTop:"250px"}}>WELCOME TO MY WORLD</h3>
+        <h3 style={flag ? {letterSpacing:"5px",color:"gray",marginTop:"120px"}: {letterSpacing:"5px",color:"gray",marginTop:"250px"}} id={style.myWorld}>WELCOME TO MY WORLD</h3>
         <h1 className={style.size}>I’m Shivam Jaiswal</h1>
 
         <p id={style.animated_Text} ref={anima}>
