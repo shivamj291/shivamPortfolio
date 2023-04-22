@@ -14,7 +14,7 @@ function Project(){
           setMode(store.getState().mode)
       })
     return (
-        <Box style={!mode?{background:"rgb(14,21,37)",paddingBottom:'50px'}:{background:'white',padding:'50px 0'}} id='project' className={style.hompro}  >
+        <Box style={!mode?{background:"rgb(14,21,37)",paddingTop:'60px'}:{background:'white',padding:'50px 0'}} id='project' className={style.hompro}  >
           <Box id={style.mypr} style={{fontSize:'25px'}}>
             <h1 id={style.h1} data-AOS="fade-up">My Project</h1>
             {/* ///////////////////////////////////////////////////////////////////////////////////// */}
@@ -169,8 +169,8 @@ function Project(){
             <hr className={style.h1hide}/>
 
             <div class={style.pr} data-AOS="fade-up" data-AOS-offset='130'>
-             <div id={style.outer_lovoda} style={mode ? {background:'rgb(240,240,240)'}:{background:'rgb(161,165,181)'}}>
-                <div id={style.inner_lovoda}>
+             <div id={style.outer_acko} style={mode ? {background:'rgb(240,240,240)'}:{background:'rgb(161,165,181)'}}>
+                <div id={style.inner_acko}>
                     <img src="acko.gif" id={style.lovoda_img}/>
                 </div>
                

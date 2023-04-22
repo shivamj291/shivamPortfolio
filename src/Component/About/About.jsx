@@ -5,7 +5,7 @@ import { useEffect, useState } from "react"
 import { Box, Progress,Stack } from '@chakra-ui/react'
 import store from "../../Redux/Store"
 
-
+// favicon.ico
 
  export function Skills(){
    const mode= store.getState()?.mode

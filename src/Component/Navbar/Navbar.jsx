@@ -172,9 +172,10 @@ store.subscribe(()=>{
     return(
 
         <div id={style.Navbar} style={flag ? {padding:"25px 0px"} : {padding:"0px"}}>
-            <div id={style.logo}>  
+          <img src='portfolioLogo.png' style={{width:'5%',height:'65px',margin:'auto 0px auto 40px'}} id={style.logo}/>
+            <div id={style.linktag}>  
              
-                   <LinkTag/>
+               <LinkTag/>
             </div>
            
             <div id={style.icons}>
@@ -184,7 +185,7 @@ store.subscribe(()=>{
             </div>
 
             <div id={style.nameShivam} >
-             <Button width='200px' height='50px' border='2px solid white' borderRadius='50px' color='white' id={style.navCv}>SHIVAM</Button>
+             <Button width='150px' height='30px' border='2px solid white' borderRadius='10px' color='white' id={style.navCv}>SHIVAM</Button>
            
               
             </div>

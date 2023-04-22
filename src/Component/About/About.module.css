@@ -2,8 +2,8 @@
    
     display:flex;
     background-color: #0E1525;
-    padding-top: 160px ;
-    padding-bottom: 10px ;
+    padding-top: 160px 
+    
 }
 #fold{
     display: none;
@@ -119,7 +119,8 @@ hr{
     #Aboutt{
         display: block;
         padding-top: 20px;
-        padding-bottom: 40px;
+        padding-bottom: 1px;
+    
     }
     #image{
       

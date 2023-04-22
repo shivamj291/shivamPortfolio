@@ -17,7 +17,7 @@ function Skills(){
         setMode(store.getState().mode)
     })
     return (
-        <Box style={!mode ? {background:"rgb(14,21,37)" }:{background:'rgb(240,240,240)',padding:'50px 0'}} id='skills' >
+        <Box style={!mode ? {background:"rgb(14,21,37)",paddingTop:'60px' }:{background:'rgb(240,240,240)',padding:'50px 0'}} id='skills' >
        
          <div data-AOS="fade-up">
        

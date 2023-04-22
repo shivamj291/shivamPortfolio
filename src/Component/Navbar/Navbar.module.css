@@ -46,7 +46,7 @@
 
     display: flex;
 }
-#logo{
+#linktag{
     display: flex
 }
 #small{
@@ -59,6 +59,8 @@
 }
 #navCv{
  background-color: transparent;
+  margin-top: 8px;
+  background-color:gray ;
 }
 #navCv:hover{
   border:2px solid rgb(253,71,102)  ;
@@ -73,7 +75,7 @@
 }
 @media all and (max-width: 1100px) and (min-width:900px) {
 
-    #nameShivam{
+    #nameShivam,#logo{
         display: none;
     }
 
@@ -89,7 +91,7 @@
         width: 100%;
     }
     
-    #logo{
+    #linktag{
         size:10px;
         
     }
@@ -101,7 +103,7 @@
     #small{
         display: none;
     }
-    #nameShivam{
+    #nameShivam,#logo{
         display: none;
     }
     #icons{
@@ -127,7 +129,7 @@
      #small{
         display: block;
      }
-     #logo{
+     #linktag,#logo{
         display: none
      }
      #linksmall{
@@ -148,7 +150,7 @@
 @media all and (max-width: 310px) and (min-width:200px) {
 
     
-    #nameShivam{
+    #nameShivam,#logo{
         display: none;
     }
 }

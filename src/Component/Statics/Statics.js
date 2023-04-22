@@ -16,7 +16,7 @@ function Static(){
      })
     return(
         <div style={ !mode ? {background:"rgb(14,21,37)"} : {background:'rgb(240,240,240)',paddingTop:'60px'}} id="statics">
-        <div  className={style.staticclass} style={!mode ? {background:'rgb(14,21,37)'}:{background:'rgb(240,240,240)',paddingBottom:'30px'}}> 
+        <div  className={style.staticclass} style={!mode ? {background:'rgb(14,21,37)',paddingTop:'60px'}:{background:'rgb(240,240,240)',paddingBottom:'30px'}}> 
            
                 <h1 id={style.staticheading}  data-AOS="fade-up">Statics</h1>
                 <div data-AOS="fade-up">
