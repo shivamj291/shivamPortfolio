@@ -1,0 +1,11 @@
+#trackMe{
+    font-size: 35px;
+    color:white;
+    margin: 15px 0;
+    font-weight: 600;
+}
+@media all and (max-width: 820px) and (min-width:200px) {
+    #trackMe{
+        font-size: 30px;
+    }
+}

@@ -1,0 +1,301 @@
+
+#mypr #h1{
+    
+        background: linear-gradient(120deg,#1c99fe 20.69%,#7644ff 50.19%,#fd4766 79.69%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        margin: auto;
+        font-size: 50px;
+        font-weight: 600;
+        width: 252px;
+    }
+    #projectinner{
+        margin: auto;
+    
+        width: 90%;
+        padding-top: 40px;
+    }
+    #pheading{
+        background: linear-gradient(120deg,#053570 33%,#09e7f3 46.19%, #1f153b 99.69%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        width: 120px;
+        margin:30px auto;
+    }
+    .h1hide{
+        
+        width: 50%;
+        margin:50px  auto;
+        border: 2px solid rgba(255, 255, 255, 0.426);
+        opacity: 0.1;
+    }
+    #lovoda_img{
+        width: 100%;
+        height: 250px;
+    }
+    #inner_lovoda{
+        
+        place-content:center;
+        width: 100%;
+        background-color:rgb(152,156,171);
+        transform: perspective(1200px) rotateY(45deg);
+     
+        padding: 5px;
+    }
+    #inner_lovoda:hover{
+        width: 100%;
+        transform: perspective(1200px) rotateY(0deg);
+        transition:all 1.5s ease-in-out ;
+    }
+    #inner_indiaMart{
+        width: 100%;
+        padding: 5px;
+        place-content:center;
+        transform: perspective(1200px) rotateY(-45deg);
+    
+        background-color:rgb(152,156,171);
+    }
+    #inner_indiaMart:hover{
+        width: 100%;
+        transform: perspective(1200px) rotateY(0deg);
+        margin-left: 0;
+        transition:all 1.5s ease-in-out ;
+    }
+    
+    
+    #indiamart_img{
+        width: 100%;
+        height:250px;
+    }
+    #outer_lovoda{
+    
+        height: 100%;
+        background-color: rgb(161, 165, 181);
+        box-shadow: 0 0 10px rgb(152,156,171);
+        width: 35%;
+        margin-right: 30px;
+     
+    }
+    
+    #outer_indiaMart{
+    
+        height: 100%;
+        background-color: rgb(161, 165, 181);
+        box-shadow: 0 0 10px rgb(152,156,171);
+        margin-left: 30px;
+        width: 35%;
+      
+    }
+    
+    .btnanc:hover{
+    
+      border: 3px solid rgb(82,113,128);
+      
+    }
+    
+    .indiamart_text h1{
+        font-size: 40px;
+        font-family:sans-serif;
+        color:aliceblue;
+        text-align: left;
+        margin-right: 20px;
+       
+    }
+    .text h1{
+        font-size: 40px;
+        font-family:sans-serif;
+        color:aliceblue;
+        text-align: left;
+        margin-left: 20px;
+       
+    }
+    .indiamart_text p{
+        font-size: 18px;
+        font-family:sans-serif;
+        color:rgb(152,156,171);
+        text-align: left;
+        margin-right: 20px;
+    }
+    .text p{
+        font-size: 18px;
+        font-family:sans-serif;
+        color:rgb(152,156,171);
+        text-align: left;
+        margin-left: 20px;
+    }
+    .pr,.pr_ind{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 20px;
+    }
+    #indiamart_text_hide{
+        display: none;
+    }
+    .btnmargin{
+        display: flex;
+        margin-left: 20px;
+    }
+    .btnmarginIn{
+        display: flex;
+    }
+    
+ 
+    
+@media all and (max-width: 1100px) and (min-width:200px) {
+  
+    #outer_lovoda,#outer_indiaMart{
+        width: 50%;
+    }
+   
+}
+@media all and (max-width: 900px) and (min-width:200px) {
+
+   
+    #outer_lovoda{
+        width:unset;
+    
+    }
+    #outer_indiaMart{
+        width:unset;
+
+    }
+    .text,.indiamart_text{
+        width: unset;
+        font-size: 10px;
+    }
+    .text h1,.indiamart_text_hide h1,.indiamart_text h1{
+        
+        font-size: 30px;
+    }
+
+}
+
+@media all and (max-width: 820px) and (min-width:200px) {
+    
+    #mypr #h1{
+        font-size: 30px;
+        width: 200px;
+    }
+    #outer_lovoda,#outer_indiaMart{
+        width: 60%;
+        margin: 20px auto;
+    }
+    .text,#indiamart_text_hide{
+        width: 80%;
+        margin:0 20%;
+    }
+   .pr,.pr_ind{
+    display: block;
+   }
+   .text p,.text h1{
+     margin-left: unset;
+   }
+   .h1hide{
+    display: block;
+   }
+   .indiamart_text{
+    display: none;
+   }
+   #indiamart_text_hide{
+     display: block;
+   }
+   #indiamart_text_hide h1{
+    font-size: 30px;
+    font-family:sans-serif;
+    color:aliceblue;
+    text-align: left;
+    margin-right: 20px;
+    
+   }
+
+    #indiamart_text_hide p{
+        font-size: 18px;
+        font-family:sans-serif;
+        color:rgb(152,156,171);
+        text-align: left;
+        margin-right: 20px;
+    }
+    .btnmargin{
+        margin-left: unset;
+    }
+}
+
+
+@media all and (max-width: 650px) and (min-width:200px) {
+    #outer_lovoda,#outer_indiaMart{
+        width: 80%;
+        margin: 20px auto;
+    }
+    .text,#indiamart_text_hide{
+        width: 90%;
+        margin:0 10%;
+    }
+ }
+ @media all and (max-width: 500px) and (min-width:200px) {
+    #outer_lovoda,#outer_indiaMart{
+        width: 90%;
+        margin: 20px auto;
+    }
+    .text,#indiamart_text_hide{
+        width: 100%;
+        margin:0 5%;
+    }
+ }
+
+ @media all and (max-width: 375px) and (min-width:200px) {
+    #outer_lovoda,#outer_indiaMart{
+        width: 96%;
+        margin: 20px auto;
+    }
+    .text,#indiamart_text_hide{
+        width: 100%;
+        margin:0 2%;
+    }
+    
+    #indiamart_text_hide h1{
+        font-size: 25px;
+    }
+    .text h1{
+        font-size: 25px;
+    }
+    #indiamart_text_hide p{
+        font-size: 15px;
+    }
+    .text p{
+        font-size: 15px;
+    }
+ }
+ 
+ @media all and (max-width: 300px) and (min-width:200px) {
+    #outer_lovoda,#outer_indiaMart{
+        width: 100%;
+        margin: 20px auto;
+    }
+    .text,#indiamart_text_hide{
+        width: 100%;
+    
+    }
+    
+    #indiamart_text_hide h1{
+        font-size: 22px;
+    }
+    .text h1{
+        font-size: 22px;
+    }
+    #indiamart_text_hide p{
+        font-size: 13px;
+    }
+    .text p{
+        font-size: 13px;
+    }
+    .btnmargin,.btnmarginIn{
+        display: block;
+            text-align: left;
+    }
+
+    
+ }
+ 
+    
+    

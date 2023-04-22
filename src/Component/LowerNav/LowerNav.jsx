@@ -4,9 +4,11 @@ import {IconButton, Tooltip,useClipboard}from "@chakra-ui/react";
 import React from "react";
 import { EmailIcon } from '@chakra-ui/icons'
 import { BsGithub, BsInstagram, BsLinkedin } from "react-icons/bs";
-
+import store from "../../Redux/Store";
+import { useState } from "react";
 export function LowerNavIcons(){
     const { hasCopied, onCopy, setValue } = useClipboard("");
+    
   return( <div id={style.icons} style={{margin:'auto'}}>
                
   <Link target="_blank" to='https://github.com/shivamj291' on>
@@ -74,10 +76,13 @@ export function LowerNavIcons(){
 </div>)}
 
 function LowerNav(){
-  
+    const [mode,setMode] = useState(false);
+    store.subscribe(()=>{
+        setMode(store.getState().mode)
+    })
     return(
 
-        <div id={style.Navbar}>
+        <div id={style.Navbar} style={ mode ? {background:'rgb(240,240,240)'} : {background:'rgb(9,16,32)'}}>
             <div id={style.logo}>  
                <img src="portfoliologo.png" id={style.navImg}/>
          

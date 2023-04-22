@@ -7,19 +7,12 @@ export function NavStickyAction(value){
         })
     )
 }
-export function ActionRef2(value){
+export function ActionMode(value){
     return(
         store.dispatch({
-            type:'reff2',
+            type:'MODE',
             payload:value
         })
     )
 }
-export function ActionRef3(value){
-    return(
-        store.dispatch({
-            type:'reff3',
-            payload:value
-        })
-    )
-}
+

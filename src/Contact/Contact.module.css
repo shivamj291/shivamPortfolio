@@ -1,8 +1,12 @@
+.ninty{
+  
+  margin:auto
+}
 
 #side_div{
 
   width: 45%;
-  background-color:rgb(9,16,32);
+
   
 }
 #feel_Free{
@@ -11,10 +15,16 @@
   background: linear-gradient(120deg,#1c99fe 20.69%,#7644ff 50.19%,#fd4766 79.69%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    width: 30%;
+    width: 493px;
     margin:auto;
     margin-bottom:60px;
     font-weight: 700;
+}
+#hire{
+  color:white;
+  font-size:35px;
+  text-align:left;
+  font-weight: 600;
 }
 #hii{
   
@@ -22,7 +32,7 @@
   background: linear-gradient(120deg,#1c99fe 20.69%,#7644ff 50.19%,#fd4766 79.69%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    width: 21%;
+    width: 109px;
     font-weight: 700;
 }
 #contact{
@@ -32,23 +42,24 @@
 #contact_inputs{
 display: flex;
 flex-direction: column;
-gap: 30px;
-width: 48%;
-margin:auto
+gap: 10px;
+width: 45%;
+margin:auto;
+
 }
 .img{
   width: 100%;
 }
 input[type="submit"] {
-  padding:12px 100px;
-  width: 250px;
+  padding:5px 0;
   text-align: center;
+  width: 230px;
   font-size: 25px;
   cursor: pointer;
   color:white;
   background-color:rgb(253,71,102);
   border-radius: 30px;
-  margin-bottom: 100px;
+  
 }
 input[type="text"],input[type="email"],input[type="message"],textarea,input[type='number']{
 
@@ -56,19 +67,27 @@ input[type="text"],input[type="email"],input[type="message"],textarea,input[type
   border:2px solid rgb(152,156,171);
   font-style:italic;
   width: 100%;
-  padding:5px 20px;
+  padding-left: 20px;
   font-size: 25px;
-  color:rgb(117,117,117)
+  color:rgb(117,117,117);
+  border-radius: 5px;
   
 }
 input[type="text"]::placeholder,input[type="email"]::placeholder,input[type="message"]::placeholder,textarea::placeholder,input[type='number']::placeholder{
   color:rgb(117,117,117);
-  
+  font-size: 20px;
 }
-@media all and (max-width: 1100px) and (min-width:200px) {
+
+@media all and (max-width: 820px) and (min-width:200px) {
+  #hire{
+
+    font-size:30px;
+   
+  }
+}     
+@media all and (max-width: 800px) and (min-width:200px) {
  
   #contact{
- 
     display: block;
   }
   #feel_Free{
@@ -77,31 +96,59 @@ input[type="text"]::placeholder,input[type="email"]::placeholder,input[type="mes
     background: linear-gradient(120deg,#1c99fe 20.69%,#7644ff 50.19%,#fd4766 79.69%);
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
-      width: 100%;
       margin:auto;
-      margin-bottom:100px;
+      margin-bottom:50px;
       
   }
   #hii{
   
 
-    background: linear-gradient(120deg,#1c99fe 20.69%,#7644ff 50.19%,#fd4766 79.69%);
+       background: linear-gradient(120deg,#1c99fe 20.69%,#7644ff 50.19%,#fd4766 79.69%);
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
-      width: 62%;
       font-weight: 700;
   }
   #contact_inputs{
-   
-    gap: 30px;
-    width: 90%;
+    width: 75%;
+
   
     }
     #side_div{
 
-      width: 90%;
+      width: 75%;
       margin:auto;
      
     }
+  
 }
-         
+@media all and (max-width: 500px) and (min-width:200px) {
+  #feel_Free{
+      width: 100%
+    }        
+  }
+  @media all and (max-width: 400px) and (min-width:200px) {
+    #contact_inputs{
+      width: 90%;
+  
+    
+      }
+      #side_div{
+  
+        width: 90%;
+        margin:auto;
+       
+      }
+  }
+@media all and (max-width: 300px) and (min-width:200px) {
+  input[type="submit"] {
+    padding:6px 50px;
+    width: 150px;
+    text-align: center;
+    font-size: 25px;
+    cursor: pointer;
+    color:white;
+    background-color:rgb(253,71,102);
+    border-radius: 30px;
+    
+  }
+}

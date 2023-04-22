@@ -23,7 +23,7 @@
 }
 #navImg{
 
-    height: 80%;
+    height: 60%;
     display: block;
     margin:auto 100px;
     background-color: rgb(152,156,171);
@@ -69,5 +69,12 @@
     #logo{
         display: none;
     }
+    #icons{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    align-items: center;
+    }
+    
    
 }

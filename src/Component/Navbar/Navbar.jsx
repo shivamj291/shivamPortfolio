@@ -22,47 +22,53 @@ import store from "../../Redux/Store";
 import LowerNav, { LowerNavIcons } from "../LowerNav/LowerNav";
 
 
-
  
 export function LinkTag(){
+  var [flag , setFlag] = useState(true);
+  const mode= store.getState()?.mode
+  store.subscribe(()=>{
+      setFlag(store.getState().set)
+  })
+
   return (
     <div id={style.link}>
           
           
     <a href="" className={style.Lincomp}> 
-       <div className={style.redDiv}>
+       <div className={style.redDiv}  >
        <i class="fa-solid fa-house-user"></i>
        Home
        </div>
      </a>
     <a href="#about" className={style.Lincomp}>	
-        <div className={style.redDiv}>
-        <i class="fa-solid fa-address-card"></i>
+        <div className={style.redDiv}  >
+        <i class="fa-solid fa-address-card" ></i>
           About
         </div>
       </a>
-     <a href="#homeskills" className={style.Lincomp}>
-        <div className={style.redDiv}>
+     <a href="#skills" className={style.Lincomp}>
+        <div className={style.redDiv}  >
         <i class="fa-solid fa-kitchen-set"></i>
               Skills
          </div>
      </a>
 
-    <a href="#homeproject" className={style.Lincomp}>
-      <div className={style.redDiv}>
+    <a href="#project" className={style.Lincomp}>
+      <div className={style.redDiv} >
       <i class="fa-solid fa-person-digging"></i>
          Project
       </div>
      </a>
       <a href='#statics' className={style.Lincomp}>
-          <div className={style.redDiv}>
+          <div className={style.redDiv}  >
           <i class="fa-solid fa-chart-line"></i>
               Statics
           </div>
       </a>
         <a href='#contact' className={style.Lincomp}>
-            <div className={style.redDiv}>
+            <div className={style.redDiv}   >
             <i class="fa-solid fa-mobile"></i>
+            
               Contact
             </div>
          </a>
@@ -72,6 +78,7 @@ export function LinkTag(){
 
 export function Icons(){
   const { hasCopied, onCopy, setValue } = useClipboard("");
+  const mode= store.getState()?.mode
   return (
        < div id={style.IconCom}>
          <Link target="_blank" to='https://github.com/shivamj291' className={style.Lincons}>
@@ -82,6 +89,7 @@ export function Icons(){
 
                bg='none'
                cursor="pointer"
+               color='white'
                colorScheme="transparent"
                className={style.iconbtn}
                icon={<BsGithub />}
@@ -94,6 +102,7 @@ export function Icons(){
                bg='transparent'
                cursor="pointer"
                colorScheme="transparent"
+               color='white'
                icon={<BsInstagram/>}
                className={style.iconbtn}
               />
@@ -105,6 +114,7 @@ export function Icons(){
                bg='none'
                cursor="pointer"
                colorScheme="transparent"
+               color='white'
                className={style.iconbtn}
                icon={<BsLinkedin/>}
              />
@@ -117,6 +127,7 @@ export function Icons(){
                bg='none'
                cursor="pointer"
                colorScheme="transparent"
+               color='white'
                className={style.iconbtn}
                icon={<EmailIcon/>}
                onClick={(e) => {
@@ -134,6 +145,10 @@ export function Icons(){
 function Navbar(){
    
 var [flag , setFlag] = useState(true);
+const [mode,setMode] = useState(false);
+store.subscribe(()=>{
+    setMode(store.getState().mode)
+})
 
   useEffect(()=>{
       var observer = new IntersectionObserver(()=>{},{
@@ -146,7 +161,7 @@ var [flag , setFlag] = useState(true);
   store.subscribe(()=>{
     setFlag(store.getState().set)
   })
-
+ 
  
     const { isOpen, onOpen, onClose } = useDisclosure();
     const [placement, setPlacement] = React.useState('right');
@@ -169,7 +184,7 @@ var [flag , setFlag] = useState(true);
             </div>
 
             <div id={style.nameShivam} >
-             <Button width='200px' height='50px' background='transparent' border='2px solid' borderRadius='50px' id={style.navCv}>SHIVAM</Button>
+             <Button width='200px' height='50px' border='2px solid white' borderRadius='50px' color='white' id={style.navCv}>SHIVAM</Button>
            
               
             </div>
@@ -188,51 +203,51 @@ var [flag , setFlag] = useState(true);
          
         </Stack>
       </RadioGroup>
-      <Button colorScheme='blue'  onClick={onOpen}>
-      <HamburgerIcon/>
-      </Button>
+         <Button colorScheme='rgb(152,156,171)'  onClick={onOpen}>
+          <HamburgerIcon/>
+         </Button>
       <Drawer placement={placement} onClose={onClose}  isOpen={isOpen}>
         <DrawerOverlay />
         <DrawerContent>
-          <DrawerHeader borderBottomWidth='1px'  style={{backgroundColor:'rgb(9,16,32)'}}><h1 style={{textAlign:'center',color:'rgb(152,156,171)',fontSize:'40px'}}>Shivam Jaiswal</h1></DrawerHeader>
-          <DrawerBody background='rgb(14,21,37)'>
+          <DrawerHeader borderBottomWidth='1px'  style={!mode ? {backgroundColor:'rgb(9,16,32)'} : {background:'rgb(220,220,220)'}}><h1 style={{textAlign:'center',color:'rgb(152,156,171)',fontSize:'30px'}}>Shivam Jaiswal</h1></DrawerHeader>
+          <DrawerBody style = {!mode ? {background:'rgb(14,21,37)'} : {background:'white'}}>
          
           <div id={style.linksmall}>
           
           
-          <a href="" className={style.Lincomp} onClick={onClose}> 
-             <div className={style.redDiv}>
+          <a href="" className={style.Lincomp} onClick={onClose} style={{fontSize:'22px'}}> 
+             <div className={style.redDiv} style = {{color:'rgb(161,165,181)'}}>
              <i class="fa-solid fa-house-user"></i>
              Home
              </div>
            </a>
-          <a href="#about" className={style.Lincomp} onClick={onClose}>	
-              <div className={style.redDiv}>
+          <a href="#about" className={style.Lincomp} onClick={onClose} style={{fontSize:'22px'}}>	
+              <div className={style.redDiv} style = {{color:'rgb(161,165,181)'}}>
               <i class="fa-solid fa-address-card"></i>
                 About
               </div>
             </a>
-           <a href="#homeskills" className={style.Lincomp} onClick={onClose}>
-              <div className={style.redDiv}>
+           <a href="#skills" className={style.Lincomp} onClick={onClose} style={{fontSize:'22px'}}>
+              <div className={style.redDiv} style = {{color:'rgb(161,165,181)'}}>
               <i class="fa-solid fa-kitchen-set"></i>
                     Skills
                </div>
            </a>
       
-          <a href="#homeproject" className={style.Lincomp} onClick={onClose}>
-            <div className={style.redDiv}>
+          <a href="#project" className={style.Lincomp} onClick={onClose} style={{fontSize:'22px'}}>
+            <div className={style.redDiv} style = {{color:'rgb(161,165,181)'}}>
             <i class="fa-solid fa-person-digging"></i>
                Project
             </div>
            </a>
-            <a href='#statics' className={style.Lincomp} onClick={onClose}>
-                <div className={style.redDiv}>
+            <a href='#statics' className={style.Lincomp} onClick={onClose} style={{fontSize:'22px'}}>
+                <div className={style.redDiv}  style = {{color:'rgb(161,165,181)'}}>
                 <i class="fa-solid fa-chart-line"></i>
                     Statics
                 </div>
             </a>
-              <a href='#contact' className={style.Lincomp} onClick={onClose}>
-                  <div className={style.redDiv}>
+              <a href='#contact' className={style.Lincomp} onClick={onClose} style={{fontSize:'22px'}}>
+                  <div className={style.redDiv} style = {{color:'rgb(161,165,181)'}}>
                   <i class="fa-solid fa-mobile"></i>
                     Contact
                   </div>

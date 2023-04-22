@@ -11,18 +11,27 @@
 #image{
     padding: 25px;
     width: 41.666%;
+    
 }
+#image_hide{
+    padding: 25px;
+    width: 41.666%;
+    display: none;
+   
+}
+
 #image img{
     border-radius: 10px;
+    width: 98%;
 }
 #aboutnav{
     display: grid;
     grid-template-columns: repeat(4,1fr);
     width: 84%;
-    margin:30px 0;
+    margin:15px 0;
     border: 1px solid gray;
     border-radius: 50px;
-    height: 60px;
+    height: 55px;
 }
 #aboutnav span{
     text-decoration: none;
@@ -30,7 +39,7 @@
     font-weight: 700;
     cursor: pointer;
     text-align: center;
-    height: 60px;
+    height: 55px;
 }
 #textabout{
     width: 58.3333%;
@@ -41,14 +50,8 @@
     background-image: linear-gradient(-224deg,#fd4766,#337dff);
     -webkit-text-fill-color: transparent;
 }
-#aboutpara1{
-    width: 230px;
-    text-align: left;
-    font-size: 25px;
-    font-weight: 700;
-}
 #aboutpara2{
-    font-size: 20px;
+    font-size: 17px;
     line-height: 30px;
     text-align: left;
     margin-right:20px;
@@ -56,7 +59,7 @@
 
 }
 #abouth2{
-    font-size: 55px;
+    font-size: 50px;
     font-weight: 600;
     text-align: left;
     background: linear-gradient(120deg,#1c99fe 20.69%,#7644ff 50.19%,#fd4766 79.69%);
@@ -73,7 +76,7 @@ hr{
   color:rgb(152,156,171);
   text-align:left;
   font-weight: 600;
-  font-size: 20px;
+  font-size: 18px;
 }
 .fns{
     display: flex;
@@ -81,10 +84,10 @@ hr{
     color:rgb(152,156,171);
     text-align:left;
     font-weight: 600;
-    font-size: 20px;
+    font-size: 18px;
   }
 .fn li{
-    margin-left:20px;
+    margin-left:18px;
 }
 .fn h3{
     margin-left:50px;
@@ -94,9 +97,24 @@ hr{
     margin:30px auto;
 }
 #aboutnav p{
-    margin-top: 18px;
+    margin-top: 14px;
 }
-@media all and (max-width: 1100px) and (min-width:750px) {
+#hideP{
+    display: none;
+}
+#abouth2hide{
+    font-size: 50px;
+    font-weight: 600;
+    margin:auto;
+    background: linear-gradient(120deg,#1c99fe 20.69%,#7644ff 50.19%,#fd4766 79.69%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+     width: 260px;
+     margin-top: -20px;
+     font-weight: 600px;
+     display: none;
+}
+@media all and (max-width:1100px) and (min-width:635px) {
 
     #Aboutt{
         display: block;
@@ -104,289 +122,185 @@ hr{
         padding-bottom: 40px;
     }
     #image{
+      
+        display: none;
+        
+    }
+    #image_hide img{
+    
+        width: 40%;
+    }
+    #image_hide{
+        display: block;
         width: 80%;
-        margin:40px auto
+        margin:40px;
+        display: flex;
+        justify-content:space-between ;
+        background-color:rgb(9,16,32);
+        margin:auto;
     }
-    .fn{
-        
-         margin: 30px;
-        font-size: 26px;
+    #hideP{
+    color:rgb(152,156,171);
+    display: block;
+
+    font-size: 18px;
+    text-align: left;
+    width: 58%;
     }
-    .fns{
-    
-       
-        display: grid;
-        grid-template-columns:repeat(2,1fr);
-        gap:10px;
-        margin: 30px;
-        font-size: 26px;
-    
-    }
-    
-    #prog{
-        width:75% ;
-      margin:40px
-    }
-    #aboutpara1{
-        width: 320px;
-        font-size: 40px;
-        margin:auto
-        
+    #aboutnav{
+        width: 100%;
     }
     #textabout{
-        margin:auto;
-        width: 96%;
+        width: 100%;
+        padding:0px
     }
     #aboutpara2{
-        font-size: 26px;
-        margin:50px 0;
+       display: none;
     }
-    #abouth2{
-        text-align: center;
-        margin:0 auto;
-    }
-       #aboutnav{
-       
-      
-        width:100%;
+    #Aboutnav p{
         font-size: 21px;
-        margin:auto
-    
+        margin-top: 10px;
     }
-    #aboutpara1{
-        background: linear-gradient(120deg,#1c99fe 20.69%,#7644ff 50.19%,#fd4766 79.69%);
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-        text-align: center;
-        width: 100%;
-        font-weight: 700;
+    #abouth2hide{
+         display: block
     }
-    #aboutnav p{
-        margin-top: 14px;
-    }
- 
-}
-@media all and (max-width: 653px) and (min-width:280px) {
-    #aboutnav{
-        display: grid;
-        grid-template-columns: repeat(2,1fr);
-        width: 100%;
-        margin:30px auto;
-        
-        border:none;
-        
-        border-radius: 50px;
-        height:100px;
-    }
-    #aboutnav p{
-        margin-top: 14px;
-    }
-    
-    #fold{
-        display: block;
-    }
-   
-    
-    #Aboutt{
-        display: block;
-        padding-top: 20px;
-        padding-bottom: 40px;
-    }
-    #image{
-    
-        width: 90%;
-        margin:auto;
-       
-    }
-    #textabout{
-        width: 100%;
-        padding:0
-        
-    }
-    #aboutpara1{
-      
-        margin:auto;
-        width: 230px;
-       text-align: center;
-    }
-    #aboutpara2{
-       
-        margin:10px;
-        font-size: 16px;
-    
-        
-    }
-
-    .fn li{
-        margin-left:0px;
-    
-    }
-   
-    .fn h3{
-        margin-left:0px;
-    
-    }
-    #aboutnav span{
-    
-        width:100%;
-        font-weight: 600;
-    }
-    .sidepadingl{
-          margin:auto;
-    }
-        
-    .fn{
-       
-        margin: 20px 0px 20px 10px;
-        font-size: 16px;
-    }
-    .fns{
-    
-        margin-left:10px;
-        display: grid;
-        grid-template-columns:repeat(2,1fr);
-        gap:10px
-        
-    
-    }
-    #aboutpara2{
-    margin:15px
-    
-    }
-  
     #abouth2{
-     text-align: center;
-     margin:0;
-     width: 100%;
-     margin:auto
-  
-    }
-    hr{
-        display:block;
-        color: rgba(174, 43, 14, 0.371);
-        background-color: rgba(154, 34, 10, 0.371) ;
-    }
-    .highLight{
-        color:white
-    }
-    #Progress{
-        margin: auto;
-    }
-}
-@media all and (max-width: 750px) and (min-width:300px) {
-
-    #aboutnav{
-        display: grid;
-        grid-template-columns: repeat(3,1fr);
-        width: 100%;
-        margin:30px auto;
-        
-        border:none;
-        font-size: 18px;
-        border-radius: 50px;
-        font-weight: 600;
-        height: 100px;
-    }
-    #aboutnav p{
-        margin-top: 15px;
-    }
-    
-    #my{
         display: none;
     }
-    #Aboutt{
-        display: block;
-        padding-top: 20px;
-        padding-bottom: 40px;
-    }
-    #image{
-    
-        width: 90%;
-        margin:auto;
-       
-    }
-    #textabout{
-        width: 100%;
+    #textboxinner{
+    width: 70%;
+    margin:auto
         
     }
-    #aboutpara1{
-      
-        margin:auto;
-    
-       
-    }
-    #aboutpara2{
-       
-        margin:10px;
-        font-size: 16px;
-    
-        
-    }
-
-    .fn li{
-        margin-left:0px;
-    
-    }
-   
-    .fn h3{
-        margin-left:0px;
-    
-    }
-    #aboutnav span{
-        
-        width:100%;
-        font-weight: 600;
-    }
-    
-        
-    .fn{
-       
-        margin: 20px 0px 20px 10px;
-        font-size: 16px;
-    }
-    .fns{
-    
-        margin-left:10px;
-        display: grid;
-        grid-template-columns:repeat(2,1fr);
-        gap:10px
-        
-    
-    }
-    #aboutpara2{
-    margin:15px
-    
-    }
-    #aboutpara1{
-        text-align: center;
-        margin: auto;
-        width: 280px;
-    }
-    #abouth2{
-     text-align: center;
-     margin:0;
-  
-    }
-    hr{
-        display:block;
-        color: rgba(174, 43, 14, 0.371);
-        background-color: rgba(154, 34, 10, 0.371) ;
-    }
-    .highLight{
-        color:white
-    }
-
-    
 }
-
-@media all and (max-width: 1300px) and (min-width:900px) {
-
-    #aboutnav span{
-       width: 100%;
-    
+    @media all and (max-width:915px) and (min-width:635px) {
+        #hideP{
+            font-size: 16px;
+            }
+    }
+    @media all and (max-width:820px) and (min-width:635px) {
+        #hideP{
+            font-size: 14px;
+            }
+            #abouth2hide{
+                font-size: 30px;
+                margin:10px auto;
+                width: 200px;
+            }
+    }
+    @media all and (max-width:725px) and (min-width:635px) {
+        #hideP{
+               font-size: 12px;
+            }
+            #aboutnav{
+                height: 48px;
+            }
+            #aboutnav span{
+                height: 48px;
+            }
+            #aboutnav p{
+                margin-top: 10px;
+            }
     }
  
+
+
+
+@media all and (max-width:635px) and (min-width:200px) {
+    
+        #Aboutt{
+            display: block;
+            padding-top: 20px;
+            padding-bottom: 40px;
+        }
+      
+
+        #image_hide{
+            width: 60%;
+            margin:20px auto;
+            display: flex;
+            justify-content:space-between ;
+            border: 2px solid rgb(152,156,171);
+            text-align: justify;
+        }
+
+       #abouth2hide{
+            display: block;
+            width: 138px;
+    
+       }
+       #abouth2{
+           display: none;
+       }
+       #abouth2hide{
+        font-size: 30px;
+        margin:10px auto;
+       }
+       #aboutpara2{
+        font-size: 17px;
+        line-height: 30px;
+        text-align:justify;
+        margin:15px;
+        color:rgb(152,156,171);
+        line-height: 20px;
+       }
+       #textabout{
+        width: 96%;
+        padding:0px;
+        margin:auto
+       }
+       #aboutnav{
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+    
+        width: 100%;
+       }
+       #box{
+        margin-left: 10px;
+       }
+       #image{
+        display: none;
+       }
+    }
+    
+@media all and (max-width:500px) and (min-width:200px) {
+ 
+   #aboutnav{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    border:none;
+    width: 100%;
+    height: unset;
+   }
+   hr{
+    display: block;
+    margin-bottom: 10px;
+   }
+
 }
-
-
-
+@media all and (max-width:420px) and (min-width:200px) {
+   #image_hide{
+    padding:0px;
+    border-radius: 10px;
+   }
+   .fns{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap:0px
+   }
+ }
+ @media all and (max-width:336px) and (min-width:200px) {
+     #aboutnav{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+     }
+     #aboutpara2{
+        font-size: 17px;
+        line-height: 30px;
+        text-align:justify;
+        margin:5px;
+        color:rgb(152,156,171);
+        line-height: 20px;
+       } 
+  }
+ 

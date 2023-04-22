@@ -13,34 +13,31 @@
 
 }
 .iconbtn:hover{
-    border: 2px solid gray;
-    color:gray
+    border: 2px solid rgb(253,71,102);
+    color:rgb(253,71,102)
 }
 .redDiv{
     margin: 0 15px ;
- 
+    color: white;
     padding:20px 0;
 }
 .redDiv i{
     margin-right:5px ;
 }
 .redDiv:hover{
-    border-bottom: 3px solid  rgb(253,71,102) ;
-    align-items: end;
-  
-    color: rgb(253,71,102)
+
+     border-bottom: 3px solid rgb(253,71,102);
+     color:rgb(253,71,102)
 }
+
+
 
 #navImg{
     width: 60px;
     display: block;
     margin: 0 40px;
 }
-#navCv:hover{
-    background-color: transparent;
-    border:2px solid gray;
-    color:gray
-}
+
 #icons{
     margin-top: 15px;
 }
@@ -53,11 +50,19 @@
     display: flex
 }
 #small{
-    display:none;
+    display: none;
 }
 
 #nameShivam{
     margin-top: 10px;
+
+}
+#navCv{
+ background-color: transparent;
+}
+#navCv:hover{
+  border:2px solid rgb(253,71,102)  ;
+  color  :rgb(253,71,102)
 }
 #linksmall{
     display: grid;
@@ -137,5 +142,13 @@
         grid-template-columns: repeat(1,1fr);
         
     }
+  
+}
+
+@media all and (max-width: 310px) and (min-width:200px) {
+
     
+    #nameShivam{
+        display: none;
+    }
 }
