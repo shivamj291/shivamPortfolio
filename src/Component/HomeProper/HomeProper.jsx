@@ -12,6 +12,7 @@ import Static from "../Statics/Statics"
 import { background } from "@chakra-ui/react"
 import { ActionMode } from "../../Redux/Action"
 import { Switch,Stack,FormLabel} from '@chakra-ui/react'
+import { MoonIcon, SunIcon} from '@chakra-ui/icons'
 
 
 function HomeProper(){
@@ -19,7 +20,7 @@ function HomeProper(){
     const staticNav = useRef(null);
     const [flag ,setFlag] = useState(true);
     
-    const [mode ,setMode] = useState(false);
+    const [mode ,setMode] = useState(true);
     const call = {
         color: "white",
         position: "fixed",
@@ -52,8 +53,10 @@ function HomeProper(){
          
 
                 <Stack direction='row' id={style.theme}>
-                    <FormLabel htmlFor='isChecked' color={mode ? "black" : 'white'}>{!mode ? 'Light Mode' : 'Dark Mode'}</FormLabel>
+                  
+                    <FormLabel htmlFor='isChecked' color="white" ><SunIcon/></FormLabel>
                     <Switch colorScheme="facebook"  size='lg' onChange={()=>setMode( mode ? false : true)} />
+                    <FormLabel htmlFor='isChecked' color= 'black'><MoonIcon/></FormLabel>
                 </Stack>
             <Home />
             <About />
