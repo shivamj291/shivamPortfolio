@@ -97,7 +97,7 @@ export function Icons(){
                icon={<BsGithub />}
              />
 </Link>
-<Link target="_blank" to='https://www.instagram.com/shivam_jaiswall_/'  className={style.Lincons}>
+<Link target="_blank" to='https://www.instagram.com/shivam_jaiswall_'  className={style.Lincons}>
              <IconButton
                fontSize='20px'
                border='none'
@@ -200,7 +200,7 @@ store.subscribe(()=>{
             </div>
 
             <div id={style.nameShivam} >
-             <Button width='150px' height='30px' border='2px solid white' borderRadius='10px' color='white' id={style.navCv}>SHIVAM</Button>
+             <Button width='150px' height='30px' border='2px solid white' borderRadius='10px' color='white'bg= {mode ? "facebook":"white"}id={style.navCv}>SHIVAM</Button>
            
               
             </div>

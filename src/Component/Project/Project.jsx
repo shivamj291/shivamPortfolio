@@ -43,7 +43,7 @@ function Project(){
                            
                             
                             <div className={style.btnmargin}>
-                                <a href="https://comfy-speculoos-0dfe32.netlify.app/" target="_blank">
+                                <a href="https://lovodo-clone-project.netlify.app/" target="_blank">
                                 <Button padding='10px 20px' 
                                 margin='0px 15px 15px 0px' 
                                 borderRadius='10px'

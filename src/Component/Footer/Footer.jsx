@@ -27,7 +27,7 @@ export function LowerNavIcons(){
      </Link>
 
 
-<Link target="_blank" to='https://www.instagram.com/shivam_jaiswall_/'>
+<Link target="_blank" to='https://www.instagram.com/shivam_jaiswall_'>
                          <IconButton
                              fontSize='30px'
                              border='2px solid rgb(152,156,171)'
