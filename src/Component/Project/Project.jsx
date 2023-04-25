@@ -13,6 +13,7 @@ function Project(){
       store.subscribe(()=>{
           setMode(store.getState().mode)
       })
+  
     return (
         <Box style={!mode?{background:"rgb(14,21,37)",paddingTop:'60px'}:{background:'white',padding:'50px 0'}} id='project' className={style.hompro}  >
           <Box id={style.mypr} style={{fontSize:'25px'}}>
@@ -35,7 +36,7 @@ function Project(){
                     <div class={style.text}>
                             <h1 style={mode?{color:"black"}:{color:'rgb(152,156,171)'}}>Lovoda</h1>
                             <p style={mode?{color:"black"}:{color:'rgb(152,156,171)'}}>LOVODA® Accessories</p>
-                            <p style={mode?{color:"black"}:{color:'rgb(152,156,171)'}}> Jewelry/watches</p>
+                            <p style={mode?{color:"black"}:{color:'rgb(152,156,171)'}}>Jewelery/Watches</p>
                             <p style={mode?{color:"black"}:{color:'rgb(152,156,171)'}}>We complete you ♥️ Stunning accessories styled for you.</p>
                             <p style={mode?{color:"black"}:{color:'rgb(152,156,171)'}}>Role - Developed SignUp page and logIn page.</p>
                             <p style={mode?{color:"black"}:{color:'rgb(152,156,171)'}}> Tech-Stack -HTML | CSS |Javascript.</p>

@@ -19,7 +19,7 @@ function Skills(){
     return (
         <Box style={!mode ? {background:"rgb(14,21,37)",paddingTop:'60px' }:{background:'rgb(240,240,240)',padding:'50px 0'}} id='skills' >
        
-         <div data-AOS="fade-up">
+         <div data-AOS="fade-up" >
        
          <Box id={style.mypr}>
             <h1 id={style.h1}>My Skills</h1>

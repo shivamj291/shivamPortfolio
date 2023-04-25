@@ -19,65 +19,67 @@ import { EmailIcon, HamburgerIcon } from '@chakra-ui/icons'
 import React, { useEffect ,useState } from "react";
 import {BsGithub, BsInstagram, BsLinkedin} from "react-icons/bs";
 import store from "../../Redux/Store";
-import LowerNav, { LowerNavIcons } from "../LowerNav/LowerNav";
+import { LowerNavIcons } from "../Footer/Footer";
 
 
  
-export function LinkTag(){
+export function LinkTag({onClose}){
   var [flag , setFlag] = useState(true);
   const mode= store.getState()?.mode
   store.subscribe(()=>{
       setFlag(store.getState().set)
   })
+ 
+  
 
   return (
     <div id={style.link}>
           
-          
-    <a href="" className={style.Lincomp}> 
-       <div className={style.redDiv}  >
-       <i class="fa-solid fa-house-user"></i>
-       Home
-       </div>
-     </a>
-    <a href="#about" className={style.Lincomp}>	
-        <div className={style.redDiv}  >
-        <i class="fa-solid fa-address-card" ></i>
-          About
-        </div>
-      </a>
-     <a href="#skills" className={style.Lincomp}>
-        <div className={style.redDiv}  >
-        <i class="fa-solid fa-kitchen-set"></i>
-              Skills
-         </div>
-     </a>
-
-    <a href="#project" className={style.Lincomp}>
-      <div className={style.redDiv} >
-      <i class="fa-solid fa-person-digging"></i>
-         Project
-      </div>
-     </a>
-      <a href='#statics' className={style.Lincomp}>
-          <div className={style.redDiv}  >
-          <i class="fa-solid fa-chart-line"></i>
-              Statics
-          </div>
-      </a>
-        <a href='#contact' className={style.Lincomp}>
-            <div className={style.redDiv}   >
-            <i class="fa-solid fa-mobile"></i>
-            
-              Contact
+    
+<a href="#" className={style.Lincomp} onClick={onClose} > 
+             <div className={style.redDiv}>
+             <i class="fa-solid fa-house-user"></i>
+             Home
+             </div>
+           </a>
+          <a href="#about" className={style.Lincomp} onClick={onClose} >	
+              <div className={style.redDiv}>
+              <i class="fa-solid fa-address-card"></i>
+                About
+              </div>
+            </a>
+           <a href="#skills" className={style.Lincomp} onClick={onClose} >
+              <div className={style.redDiv}>
+              <i class="fa-solid fa-kitchen-set"></i>
+                    Skills
+               </div>
+           </a>
+      
+          <a href="#project" className={style.Lincomp} onClick={onClose} >
+            <div className={style.redDiv}>
+            <i class="fa-solid fa-person-digging"></i>
+               Project
             </div>
-         </a>
+           </a>
+            <a href='#statics' className={style.Lincomp} onClick={onClose} >
+                <div className={style.redDiv} >
+                <i class="fa-solid fa-chart-line"></i>
+                    Statics
+                </div>
+            </a>
+              <a href='#contact' className={style.Lincomp} onClick={onClose} >
+                  <div className={style.redDiv}>
+                  <i class="fa-solid fa-mobile"></i>
+                    Contact
+                  </div>
+               </a> 
+
 </div>
 )}
 
 
 export function Icons(){
-  const { hasCopied, onCopy, setValue } = useClipboard("");
+  const { hasCopied, onCopy, setValue } = useClipboard("shivamj291@gmail.com");
   const mode= store.getState()?.mode
   return (
        < div id={style.IconCom}>
@@ -131,7 +133,6 @@ export function Icons(){
                className={style.iconbtn}
                icon={<EmailIcon/>}
                onClick={(e) => {
-                 setValue("shivamj291@gmail.com");
                  onCopy();
                }}
              />
@@ -165,7 +166,21 @@ store.subscribe(()=>{
  
     const { isOpen, onOpen, onClose } = useDisclosure();
     const [placement, setPlacement] = React.useState('right');
+     
+    const [show, setShow] = useState(false);
 
+    useEffect(() => {
+      function handleResize() {
+        if (window.innerWidth < 600) {
+          setShow(true);
+        } else {
+          setShow(false);
+        }
+      }
+      window.addEventListener("resize", handleResize);
+      return () => window.removeEventListener("resize", handleResize);
+    }, []);
+  
 
 
        
@@ -205,55 +220,17 @@ store.subscribe(()=>{
         </Stack>
       </RadioGroup>
          <Button colorScheme='rgb(152,156,171)'  onClick={onOpen}>
-          <HamburgerIcon/>
+            <HamburgerIcon/>
          </Button>
-      <Drawer placement={placement} onClose={onClose}  isOpen={isOpen}>
+      <Drawer placement={placement} onClose={onClose}  isOpen={show&&isOpen} >
         <DrawerOverlay />
         <DrawerContent>
           <DrawerHeader borderBottomWidth='1px'  style={!mode ? {backgroundColor:'rgb(9,16,32)'} : {background:'rgb(220,220,220)'}}><h1 style={{textAlign:'center',color:'rgb(152,156,171)',fontSize:'30px'}}>Shivam Jaiswal</h1></DrawerHeader>
           <DrawerBody style = {!mode ? {background:'rgb(14,21,37)'} : {background:'white'}}>
          
           <div id={style.linksmall}>
-          
-          
-          <a href="" className={style.Lincomp} onClick={onClose} style={{fontSize:'22px'}}> 
-             <div className={style.redDiv} style = {{color:'rgb(161,165,181)'}}>
-             <i class="fa-solid fa-house-user"></i>
-             Home
-             </div>
-           </a>
-          <a href="#about" className={style.Lincomp} onClick={onClose} style={{fontSize:'22px'}}>	
-              <div className={style.redDiv} style = {{color:'rgb(161,165,181)'}}>
-              <i class="fa-solid fa-address-card"></i>
-                About
-              </div>
-            </a>
-           <a href="#skills" className={style.Lincomp} onClick={onClose} style={{fontSize:'22px'}}>
-              <div className={style.redDiv} style = {{color:'rgb(161,165,181)'}}>
-              <i class="fa-solid fa-kitchen-set"></i>
-                    Skills
-               </div>
-           </a>
-      
-          <a href="#project" className={style.Lincomp} onClick={onClose} style={{fontSize:'22px'}}>
-            <div className={style.redDiv} style = {{color:'rgb(161,165,181)'}}>
-            <i class="fa-solid fa-person-digging"></i>
-               Project
-            </div>
-           </a>
-            <a href='#statics' className={style.Lincomp} onClick={onClose} style={{fontSize:'22px'}}>
-                <div className={style.redDiv}  style = {{color:'rgb(161,165,181)'}}>
-                <i class="fa-solid fa-chart-line"></i>
-                    Statics
-                </div>
-            </a>
-              <a href='#contact' className={style.Lincomp} onClick={onClose} style={{fontSize:'22px'}}>
-                  <div className={style.redDiv} style = {{color:'rgb(161,165,181)'}}>
-                  <i class="fa-solid fa-mobile"></i>
-                    Contact
-                  </div>
-               </a>
-      </div>
+               <LinkTag onClose = {onClose}/>
+          </div>
           
                
                <LowerNavIcons/>

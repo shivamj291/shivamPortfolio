@@ -1,4 +1,4 @@
-import style from "./LowerNav.module.css"
+import style from "./Footer.module.css"
 import { Link } from "react-router-dom";
 import {IconButton, Tooltip,useClipboard}from "@chakra-ui/react";
 import React from "react";

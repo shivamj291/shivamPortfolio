@@ -7,7 +7,7 @@ import Navbar from "../Navbar/Navbar"
 import style from './HomeProper.module.css'
 import store from "../../Redux/Store"
 import Contact from "../../Contact/Contact"
-import LowerNav from "../LowerNav/LowerNav"
+import LowerNav from "../Footer/Footer"
 import Static from "../Statics/Statics"
 import { background } from "@chakra-ui/react"
 import { ActionMode } from "../../Redux/Action"
@@ -15,12 +15,12 @@ import { Switch,Stack,FormLabel} from '@chakra-ui/react'
 
 
 function HomeProper(){
-    var statdiv = useRef(null);
-    var staticNav = useRef(null);
+    const statdiv = useRef(null);
+    const staticNav = useRef(null);
     const [flag ,setFlag] = useState(true);
     
-      const [mode ,setMode] = useState(false);
-    var call = {
+    const [mode ,setMode] = useState(false);
+    const call = {
         color: "white",
         position: "fixed",
         top: "0",
@@ -28,7 +28,7 @@ function HomeProper(){
         width: "100%",
         zIndex: "3",
     }
-    var callmode = {
+    const callmode = {
         
         position: "fixed",
         top: "0",
@@ -50,7 +50,6 @@ function HomeProper(){
                  <Navbar/>
             </div>
          
-
 
                 <Stack direction='row' id={style.theme}>
                     <FormLabel htmlFor='isChecked' color={mode ? "black" : 'white'}>{!mode ? 'Light Mode' : 'Dark Mode'}</FormLabel>

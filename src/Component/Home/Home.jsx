@@ -84,7 +84,7 @@ function Home(){
 
         <p id={style.animated_Text} ref={anima}>
             <span >Web Developer</span>
-            <span >MERN Student</span>
+            <span >MERN Developer</span>
             <span >UI Creator</span>
         </p>
         <h1 className={style.size} style = {!mode ? {color:'white'} : {color:'black'}}>Live in Raisen (M.P.)</h1>
