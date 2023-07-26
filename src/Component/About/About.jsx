@@ -172,14 +172,14 @@ console.log(mode)
 <div id={style.Aboutt}  style={mode ?{backgroundColor:'white'}:{backgroundColor:'rgb(14,21,37)'}}>
 <h2 id={style.abouth2hide}>About Me</h2>
            <div id={style.image_hide} style={!mode ? {backgroundColor:'rgb(9,16,32)'}:{backgroundColor:'rgb(240,240,240)'}}>
-                <img src="Profile.jpg"/>
+                <img src="https://i.postimg.cc/cJZxrmVB/Profile.jpg"/>
                  <div id={style.hideP}>
                     <p id={style.hideaboutpara2} style={mode ? {color:'black'}:{color:'rgb(152,156,171)'}}>As a full stack web developer, I am passionate about creating seamless user experiences through my expertise in JavaScript, HTML, CSS, and React. With a strong command of these languages, I am able to craft dynamic front-end applications that engage users and drive results. Additionally, my skills extend to the back-end, where I can build robust systems that are both efficient and secure. Whether working solo or as part of a team, I am committed to delivering top-quality solutions that exceed expectations. </p>
                  </div>
            </div>
 
 
-    <div id={style.image}><img src="Profile.jpg"/></div>
+    <div id={style.image}><img src="https://i.postimg.cc/cJZxrmVB/Profile.jpg"/></div>
         <div id={style.textabout} >
 
            

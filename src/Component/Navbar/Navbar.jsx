@@ -187,7 +187,7 @@ store.subscribe(()=>{
     return(
 
         <div id={style.Navbar} style={flag ? {padding:"25px 0px"} : {padding:"0px"}}>
-          <img src='portfolioLogo.png' style={{width:'5%',height:'65px',margin:'auto 0px auto 40px'}} id={style.logo}/>
+          <img src='https://i.postimg.cc/SQwJmWND/portfolio-Logo.png' style={{width:'5%',height:'65px',margin:'auto 0px auto 40px'}} id={style.logo}/>
             <div id={style.linktag}>  
              
                <LinkTag/>
