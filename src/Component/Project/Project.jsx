@@ -38,7 +38,8 @@ function Project(){
                             <p style={mode?{color:"black"}:{color:'rgb(152,156,171)'}}>LOVODA® Accessories</p>
                             <p style={mode?{color:"black"}:{color:'rgb(152,156,171)'}}>Jewelery/Watches</p>
                             <p style={mode?{color:"black"}:{color:'rgb(152,156,171)'}}>We complete you ♥️ Stunning accessories styled for you.</p>
-                            <p style={mode?{color:"black"}:{color:'rgb(152,156,171)'}}>Role - Developed SignUp page and logIn page.</p>
+                            <p style={mode?{color:"black"}:{color:'rgb(152,156,171)'}}>Features : Sign in | Sign up | Filter & sort Products |<br/> Add to cart & wish-list | Payment</p>
+                            <p style={mode?{color:"black"}:{color:'rgb(152,156,171)'}}>Role - Developed SignUp page, logIn page and Responsiveness </p>
                             <p style={mode?{color:"black"}:{color:'rgb(152,156,171)'}}> Tech-Stack -HTML | CSS |Javascript.</p>
                            
                             
@@ -82,15 +83,17 @@ function Project(){
                             <p style={mode?{color:"black"}:{color:'rgb(152,156,171)'}}>We connect Buyers & Sellers.</p>
                             <p style={mode?{color:"black"}:{color:'rgb(152,156,171)'}}> End all your business worries with IndiaMART.</p>
                             <p style={mode?{color:"black"}:{color:'rgb(152,156,171)'}}> IndiaMART is India's largest online B2B marketplace.</p>
-                            <p style={mode?{color:"black"}:{color:'rgb(152,156,171)'}}>Role - Developed Home page and login page.</p>
-                            <p style={mode?{color:"black"}:{color:'rgb(152,156,171)'}}>Tech-Stack - HTML | CSS | JavaSript | REST API | LocalStorage.</p>
+                            <p style={mode?{color:"black"}:{color:'rgb(152,156,171)'}}>  Features : Sign in | Filter Products | Search Products |<br/> Sliding Image | Add seller | Backend</p>
+                           
+                            <p style={mode?{color:"black"}:{color:'rgb(152,156,171)'}}>Role - Developed Home page , login page and Backend Part.</p>
+                            <p style={mode?{color:"black"}:{color:'rgb(152,156,171)'}}>Tech-Stack - HTML | CSS | JavaSript | API | LocalStorage |<br/> MongoDB | Express | Node.js</p>
                     
                        
  
 
 
                         <div className={style.btnmarginIn}>
-                        <a href="https://astonishing-smakager-1c8cc9.netlify.app/" target="_blank">
+                        <a href="https://india-mart-clone.vercel.app/" target="_blank">
                         <Button padding='10px 20px' 
                         margin='0px 15px 15px 0px' 
                         borderRadius='10px'
@@ -104,7 +107,7 @@ function Project(){
                         marginTop='5px'
                         >Go Live</Button></a>
                       
-                        <a href="https://github.com/shivamj291/IndiaMart-Clone" target="_blank">
+                        <a href="https://github.com/shivamj291/IndiaMartWithBackend" target="_blank">
                             
                             
                         <Button padding='10px 20px' 
@@ -131,14 +134,16 @@ function Project(){
 
 
                 <div id={style.indiamart_text_hide}>
-                            <h1 style={mode?{color:"black"}:{color:'rgb(152,156,171)'}}>Indiamart</h1>
+                <h1 style={mode?{color:"black"}:{color:'rgb(152,156,171)'}}>Indiamart</h1>
                             <p style={mode?{color:"black"}:{color:'rgb(152,156,171)'}}>We connect Buyers & Sellers.</p>
                             <p style={mode?{color:"black"}:{color:'rgb(152,156,171)'}}> End all your business worries with IndiaMART.</p>
                             <p style={mode?{color:"black"}:{color:'rgb(152,156,171)'}}> IndiaMART is India's largest online B2B marketplace.</p>
-                            <p style={mode?{color:"black"}:{color:'rgb(152,156,171)'}}>Role - Developed Home page and login page.</p>
-                            <p style={mode?{color:"black"}:{color:'rgb(152,156,171)'}}>Tech-Stack - HTML | CSS | JavaSript | REST API | LocalStorage.</p>
+                            <p style={mode?{color:"black"}:{color:'rgb(152,156,171)'}}>  Features : Sign in | Filter Products | Search Products |<br/> Sliding Image | Add seller | Backend</p>
+                           
+                            <p style={mode?{color:"black"}:{color:'rgb(152,156,171)'}}>Role - Developed Home page , login page and Backend Part.</p>
+                            <p style={mode?{color:"black"}:{color:'rgb(152,156,171)'}}>Tech-Stack - HTML | CSS | JavaSript | API | LocalStorage |<br/> MongoDB | Express | Node.js</p>
                         <div className={style.btnmarginIn} >
-                            <a href="https://astonishing-smakager-1c8cc9.netlify.app/" target="_blank">
+                            <a href="https://india-mart-clone.vercel.app/" target="_blank">
                             <Button padding='10px 20px' 
                             margin='0px 15px 15px 0px' 
                             borderRadius='10px'
@@ -151,7 +156,7 @@ function Project(){
                             marginTop='5px'
                             >Go Live</Button></a>
 
-                            <a href="https://github.com/shivamj291/IndiaMart-Clone" target="_blank">
+                            <a href="https://github.com/shivamj291/IndiaMartWithBackend" target="_blank">
                             <Button padding='10px 20px' 
                             margin='0px 15px 15px 0px' 
                             borderRadius='10px'
@@ -181,8 +186,10 @@ function Project(){
                         <h1  style={mode?{color:"black"}:{color:'rgb(152,156,171)'}}>Acko</h1>
                         <p  style={mode?{color:"black"}:{color:'rgb(152,156,171)'}}>We're easy, effortless and 100% digital.</p>
                         
-                        <p  style={mode?{color:"black"}:{color:'rgb(152,156,171)'}}>  ACKO is an IRDAI licensed General Insurance company.</p>
+                        <p  style={mode?{color:"black"}:{color:'rgb(152,156,171)'}}> ACKO is an IRDAI licensed General Insurance company.</p>
                         <p  style={mode?{color:"black"}:{color:'rgb(152,156,171)'}}>We offer Car, Two-Wheeler, Taxi and Health Insurance plans.</p>
+                        <p  style={mode?{color:"black"}:{color:'rgb(152,156,171)'}}>Features : Sign in | Search Products | Payment </p>
+                       
                         <p  style={mode?{color:"black"}:{color:'rgb(152,156,171)'}}>Role - Developed product Page.</p>
                         <p  style={mode?{color:"black"}:{color:'rgb(152,156,171)'}}>Tech-Stack - HTML | CSS | JavaScript | React | Redux | Chakra UI.</p>
                        <div className={style.btnmargin}>
